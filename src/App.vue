@@ -10,7 +10,9 @@ const politics = [
   },
   {
     label: "2002 - Pilotprojekt \"Elektronische Gesundheitskarte\"",
-    fullText: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    fullText: "Am 21. August wurde das Projekt \"Gesundheitskarte Schleswig-Holstein\" vorgestellt. Neben den bisher üblichen Daten soll die neue Karte zusätzliche Notfalldaten " +
+              "über Blutgruppe, Allergien, Implantate und Impfungen enthalten. Ebenso soll sie den Zugriff auf das kommende E-Rezept gewähren." +
+              "Die Karte soll bis 2006 bundesweit eingeführt werden."
   },
   {
     label: "2003",
@@ -18,11 +20,14 @@ const politics = [
   },
   {
     label: "2004 - Das Gesundheitsmodernisierungsgesetz",
-    fullText: ""
+    fullText: "Das \"Gesetz zur Modernisierung der gesetzlichen Krankenversicherung\" tritt in Kraft und reformierte weite Teile der gesetzlichen Krankenversicherung mit dem Ziel " +
+              "die Beiträge zur gesetzlichen Krankenversicherung zu senken."
   },
   {
     label: "2005 - Gründung der Gematik",
-    fullText: ""
+    fullText: "Das Gesetz zur Organisationsstruktur der Telematik im Gesundheitswesen definiert die Aufgaben der neu gegründeten \"Gematik - Gesellschaft für Telematikanwendungen der Gesundheitskarte mbH\".\n" +
+              "Sie soll unter anderem technische und funktionale Anforderungen für Komponenten und Dienste der Telematikinfrastruktur (TI) definieren und solche zulassen.\n" +
+              "Weiter soll sie Rahmenbedingungen für den Betrieb der TI festlegen und deren Einhaltung sicherstellen."
   },
   {
     label: "2006"
@@ -37,7 +42,8 @@ const politics = [
     label: "2009"
   },
   {
-    label: "2010 - Schlichtungsverfahren innerhalb der Gematik"
+    label: "2010 - Schlichtungsverfahren innerhalb der Gematik",
+    fullText: "Festlegungen für das weitere Vorgehen werden getroffen und ein Schlichtungsverfahren für Streitfragen eingeführt. Gleichzeitig wird Druck auf die Kassen gemacht die Einführung zu beschleunigen, da ansonsten Kürzungen bei der Verwaltung drohen."
   },
   {
     label: "2011",
@@ -52,7 +58,8 @@ const politics = [
     label: "2014"
   },
   {
-    label: "2015 - Das E-Health Gesetz"
+    label: "2015 - Das E-Health Gesetz",
+    fullText: "Gesetz für sichere digitale Kommunikation und Anwendung im Gesundheitssystem sowie zur Änderung weiterer Gesetze (E-Health-Gesetz): Fahrplan für die Einführung der digitalen Infrastruktur im Gesundheitswesen + diverse Umsetzungsfristen für Akteure der Selbstverwaltung"
   },
   {
     label: "2016"
@@ -65,6 +72,10 @@ const politics = [
   },
   {
     label: "2019 - Das TSVG & GSV treten in Kraft",
+    fullText: "Gesetz für schnellere Termine und bessere Versorgung (Terminservice- und Versorgungsgesetz, TSVG)\n" +
+        "(Fristen zur Einführung der ePA, eAU; Umbenennung in und effektivere Entscheidungsprozesse der gematik)." +
+        "Gesetz für mehr Sicherheit in der Arzneimittelversorgung (GSAV):\n" +
+        "Ermöglichung der Abgabe verschreibungspflichtiger Arzneimittelversorgung durch Abgabe nach ausschließlicher Fernbehandlung; Vorgaben für Selbstverwaltung zur Einführung zur Einführung des E-Rezepts"
   },
   {
     label: "2020"
@@ -166,7 +177,9 @@ const production = [
 ]
 const estland = [
   {
-    label: "2001"
+    label: "2001",
+    fullText: "Einführung der sog. X-Road-Infrastruktur für alle digitalen Austausche im Gesundheitswesen (in Deutschland vergleichbar mit der TI-Infrastruktur).",
+    visible: true
   },
   {
     label: "2002"
@@ -178,7 +191,9 @@ const estland = [
     label: "2004"
   },
   {
-    label: "2005"
+    label: "2005",
+    fullText: "EU-Mittel für \"E-Health 2005\" (ePA, E-Rezept, digitale Bildverarbeitung, digitale Registrierung) werden bewilligt.",
+    visible: true
   },
   {
     label: "2006"
@@ -187,22 +202,32 @@ const estland = [
     label: "2007"
   },
   {
-    label: "2008"
+    label: "2008",
+    fullText: "Einführung der elektronischen Patientenakte (ePA).",
+    visible: true
   },
   {
-    label: "2009"
+    label: "2009",
+    fullText: "Das Gesundheitsinformationsportal startet in den Produktivbetrieb.",
+    visible: true
   },
   {
-    label: "2010"
+    label: "2010",
+    fullText: "Der E-Rezept-Dienst startet in den Produktivbetrieb.",
+    visible: true
   },
   {
     label: "2011"
   },
   {
-    label: "2012"
+    label: "2012",
+    fullText: "Videosprechstunden sind möglich.",
+    visible: true
   },
   {
-    label: "2013"
+    label: "2013",
+    fullText: "\"Staatliche IT-Health Strategie 2013\", neu aufgelegt 2020",
+    visible: true
   },
   {
     label: "2014"
@@ -217,7 +242,9 @@ const estland = [
     label: "2017"
   },
   {
-    label: "2018"
+    label: "2018",
+    fullText: "Grenzüberschreitende E-Verschreibungen nach Finnland werden ermöglicht.",
+    visible: true
   },
   {
     label: "2019"

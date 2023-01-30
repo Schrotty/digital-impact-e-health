@@ -4,7 +4,7 @@
 
         <div class="timeline-entry-list">
           <template v-for="entry in timelineEntries">
-            <Disclosure>
+            <Disclosure :default-open="entry.visible || false">
               <div class="timeline-entry">
               <div class="flex">
                 <div class="timeline-entry-marker"></div>
