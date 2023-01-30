@@ -1,0 +1,110 @@
+@import url(./assets/source-sans-pro/source-sans-pro.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --s-main-font: Source Sans Pro, Helvetica, sans-serif;
+    --s-heading1-size: 5em;
+    --s-heading2-size: 2.0em;
+    --s-heading3-size: 1.6em;
+    --s-heading4-size: 2em;
+}
+
+body {
+    color: white;
+    font-family: var(--s-main-font);
+    width: 1920px;
+    height: 1080px;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-weight: 600;
+    letter-spacing: normal;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+    line-height: 1.2;
+    max-width: available;
+}
+
+h1 {
+    font-size: var(--s-heading1-size);
+}
+
+h2 {
+    font-size: var(--s-heading2-size);
+}
+
+p {
+    word-break: break-word;
+}
+
+#title-section, #estland-section, #gematik-section, #outro-section {
+    justify-content: center;
+}
+
+#title-section, #estland-section, #gematik-section, #outro-section {
+    padding-left: 50px;
+    @apply bg-neutral-800;
+    position: relative;
+    z-index: 5;
+}
+
+#timeline-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-container {
+    width: 100%
+}
+
+.timeline-container > .timeline-bar {
+    padding-bottom: 250px;
+    background-color: gray;
+    position: fixed;
+    height: 100%;
+    width: 10px;
+    top: 0;
+    z-index: 10;
+}
+
+.timeline-entry-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 50px;
+}
+
+.timeline-entry-list .timeline-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.timeline-entry-label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.timeline-entry-label, .label {
+    font-size: var(--s-heading4-size);
+}
+
+.timeline-entry-marker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: gray;
+    position: relative;
+    left: -20px;
+}
+
+.timeline-entry-fulltext {
+    margin-left: 50px
+}
