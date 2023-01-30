@@ -95,24 +95,16 @@ const production = [
     label: "2001"
   },
   {
-    label: "2002 - Pilotprojekt \"Elektronische Gesundheitskarte\"",
-    type: "politics",
-    fullText: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    label: "2002",
   },
   {
     label: "2003",
-    type: "politics",
-    fullText: ""
   },
   {
-    label: "2004 - Das Gesundheitsmodernisierungsgesetz",
-    type: "politics",
-    fullText: ""
+    label: "2004",
   },
   {
-    label: "2005 - Gründung der Gematik",
-    type: "politics",
-    fullText: ""
+    label: "2005"
   },
   {
     label: "2006"
@@ -127,12 +119,11 @@ const production = [
     label: "2009"
   },
   {
-    label: "2010 - Schlichtungsverfahren innerhalb der Geamtik",
-    type: "politics",
+    label: "2010"
   },
   {
     label: "2011 - Die erste Generation von elektronischen Gesundheitskarten erscheint",
-    type: "prod",
+    fullText: "Ausgabe der ersten Generation von elektronischen Gesundheitskarten, enthält abseits eines Lichtbildes aber keine weiteren Funktionen."
   },
   {
     label: "2012"
@@ -144,35 +135,38 @@ const production = [
     label: "2014"
   },
   {
-    label: "2015 - Das E-Health Gesetz",
-    type: "politics",
+    label: "2015",
   },
   {
     label: "2016"
   },
   {
     label: "2017 - Die erste Generation elektronischer Gesundheitskarten muss getauscht werden",
-    type: "prod",
+    fullText: "Ab Oktober können elektronische Gesundheitskarten der ersten Generation nicht mehr eingelesen werden und der Wechsel auf Version zwei wird nötig. Diese ermöglicht nun auch den Abgleich mit den Versichertenstammdaten.",
   },
   {
     label: "2018 - Die Telematikinfrastruktur wechselt in den Produktivbetrieb",
-    type: "prod",
+    fullText: "Produktivbetrieb der Telematikinfrastruktur (TI). Alle Arztpraxen müssen bis Ende 2018 angebunden sein."
   },
   {
     label: "2019 - Das Terminservice- und Versorgungsgesetz & das Gesetz für mehr Sicherheit in der Arzneimittelversorgung",
     type: "politics",
   },
   {
-    label: "2020 - Pilotversuche"
+    label: "2020 - Pilotversuche",
+    fullText: "Pilotversuche beim E-Rezept ca 2020"
   },
   {
-    label: "2021 - Die elektronische Gesundheitsakte für alle gesetzlichen Versicherten"
+    label: "2021 - Die elektronische Gesundheitsakte für alle gesetzlichen Versicherten",
+    fullText: "Elektronische Patientenakte für alle gesetzlich Versicherten"
   },
   {
-    label: "2022 - Apotheken nehmen elektronische Rezepte an & Abbruch der Pilotversuche"
+    label: "2022 - Apotheken nehmen elektronische Rezepte an & Abbruch der Pilotversuche",
+    fullText: "Ab September 2022: Apotheken nehmen elektronische Rezepte an (viele Arztpraxen technisch jedoch nicht in der Lage diese auszustellen); Abbruch Rollout in Testregionen"
   },
   {
-    label: "2023 - Geplante bundesweite Einführung des E-Rezepts"
+    label: "2023 - Geplante bundesweite Einführung des E-Rezepts",
+    fullText: "Geplant: bundesweite Einführung des E-Rezepts ab 2023"
   }
 ]
 const estland = [
