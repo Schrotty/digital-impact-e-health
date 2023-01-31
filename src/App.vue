@@ -521,7 +521,7 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale,
 
     <!-- FINAL SECTION -->
     <section id="estland-section" class="flex flex-col h-screen mx-auto content-section">
-      <h1>Zum Abschluss</h1>
+      <h1>Zum Nachdenken</h1>
       <h2>Welche Bedeutung hat für euch die gesellschaftliche Beteiligung von verschiedenen Akteur:innen?</h2>
       <h2> Wie könnte eine zügige Einführung von digitalen Anwendungen erfolgen, während gleichzeitig keine gesellschaftlichen Akteure vernachlässigt werden?</h2>
     </section>
