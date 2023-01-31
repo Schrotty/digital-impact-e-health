@@ -1,7 +1,43 @@
 <script setup lang="ts">
 import Timeline from "./components/Timeline.vue";
+import { Pie } from 'vue-chartjs';
 import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/vue";
 import {ref} from "vue";
+import {Chart as ChartJS, BarElement, CategoryScale, Legend, LinearScale, Title, Tooltip, ArcElement} from "chart.js";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+const chartOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+            legend: {
+                display: false,
+                labels: {
+                    color: 'rgb(255, 99, 132)'
+                }
+            }
+        }
+}
+
+const gematikChartData = {
+  labels: ["GKV-Spitzenverband", "Kassenärztliche Bundesvereinigung", "Deutsche Krankenhausgesellschaft", "Deutscher Apothekerverband", "Bundesärztekammer", "Bundeszahnärztekammer", "Kassenzahnärztliche Bundesvereinigung"],
+  datasets: [{
+    label: "Gesellschafteranteile",
+    data: [50, 15, 12, 8, 5, 5, 5],
+    backgroundColor: [
+        '#a5b4fc', '#93c5fd', '#7dd3fc', '#67e8f9', '#5eead4', '#6ee7b7', '#86efac'
+    ],
+  }]
+}
+
+const estlandChartData = {
+  labels: ["Staat"],
+  datasets: [{
+    label: "Gesellschafteranteile",
+    data: [100],
+    backgroundColor: '#a5b4fc',
+  }]
+}
 
 const selected = ref()
 const politics = [
@@ -171,7 +207,7 @@ const production = [
 ]
 const estland = [
   {
-    label: "2001",
+    label: "2001 - Einführung der digitalen Infrastruktur",
     fullText: "Einführung der sog. X-Road-Infrastruktur für alle digitalen Austausche im Gesundheitswesen (in Deutschland vergleichbar mit der TI-Infrastruktur).",
     visible: true
   },
@@ -185,7 +221,7 @@ const estland = [
     label: "2004"
   },
   {
-    label: "2005",
+    label: "2005 - Fördermittel der EU werden bewilligt",
     fullText: "EU-Mittel für \"E-Health 2005\" (ePA, E-Rezept, digitale Bildverarbeitung, digitale Registrierung) werden bewilligt.",
     visible: true
   },
@@ -196,17 +232,17 @@ const estland = [
     label: "2007"
   },
   {
-    label: "2008",
+    label: "2008 - Einführung der ePA",
     fullText: "Einführung der elektronischen Patientenakte (ePA).",
     visible: true
   },
   {
-    label: "2009",
+    label: "2009 - Das Gesundheitsinformationsportal startet",
     fullText: "Das Gesundheitsinformationsportal startet in den Produktivbetrieb.",
     visible: true
   },
   {
-    label: "2010",
+    label: "2010 - Der E-Rezept startet",
     fullText: "Der E-Rezept-Dienst startet in den Produktivbetrieb.",
     visible: true
   },
@@ -214,12 +250,12 @@ const estland = [
     label: "2011"
   },
   {
-    label: "2012",
+    label: "2012 - Videosprechstunden sind möglich",
     fullText: "Videosprechstunden sind möglich.",
     visible: true
   },
   {
-    label: "2013",
+    label: "2013 - Staatliche IT-Health Strategie",
     fullText: "\"Staatliche IT-Health Strategie 2013\", neu aufgelegt 2020",
     visible: true
   },
@@ -236,7 +272,7 @@ const estland = [
     label: "2017"
   },
   {
-    label: "2018",
+    label: "2018 - Grenzüberschreitende Verschreibungen",
     fullText: "Grenzüberschreitende E-Verschreibungen nach Finnland werden ermöglicht.",
     visible: true
   },
@@ -256,6 +292,8 @@ const estland = [
     label: "2023"
   },
 ]
+
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement)
 </script>
 
 <template>
@@ -344,10 +382,22 @@ const estland = [
         </div>
       </div>
 
-      <div class="flex flex-row">
-        Um Blockaden aufzulösen und den Digitalisierungsprozess zu beschleunigen, übernahm (mit den
-        TSVG) 2019 das BMG mit 51% die Mehrheitsanteile der gematik und legte die einfache Mehrheit zur
-        Beschlussfähigkeit fest. Damit kann das BMG allein Entscheidungen beschließen.
+      <div class="flex flex-row gap-3">
+        <div class="flex flex-col w-1/2">
+          <span class="label">Die Gesellschafter der Gematik bis 2019 in %</span>
+          <div class="flex">
+            <pie id="estland-pie-chart" :data="gematikChartData" :options="chartOptions" />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-1/2">
+            <span class="label">Änderungen in 2019</span>
+            <p>
+              Um Blockaden aufzulösen und den Digitalisierungsprozess zu beschleunigen, übernahm (mit den
+              TSVG) 2019 das BMG mit 51% die Mehrheitsanteile der gematik und legte die einfache Mehrheit zur
+              Beschlussfähigkeit fest. Damit kann das BMG allein Entscheidungen beschließen.
+            </p>
+          </div>
       </div>
     </section>
 
@@ -361,25 +411,34 @@ const estland = [
       <h1>Struktur der estländischen E-Health Foundation bis 2017</h1>
       <div class="flex gap-3">
         <div class="flex flex-col w-1/2">
-          <span class="label">Zielvorgabe durch Politik</span>
-          <p>
-            Die Politik legt durch Gesetze fest (zuletzt durch eine "Gesundheits-IT Strategie" 2013 und
-            2017), bis wann welche Gesundheitsleistungen digital sein sollen. Die E-Health Foundation
-            kümmert sich als Teilorganisation des Sozialministeriums um die Umsetzung.
-            Da die E-Health Foundation keine Gesellschafter außer dem Staat hat, kann sie schneller
-            Beschlüsse fassen und Entscheidungen treffen.
-          </p>
+          <span class="label">Die Gesellschafter der E-Health Foundation</span>
+          <div class="flex">
+            <pie id="estland-pie-chart" :data="estlandChartData" :options="chartOptions" />
+          </div>
         </div>
 
-        <div class="flex flex-col w-1/2">
-          <span class="label">Teilbeteiligung der Krankenkassen</span>
-          <p>
-            Die Krankenkassen finanzieren teilweise die Entwicklung von digitalen
-            Gesundheitsdienstleistungen mit. Der Betrieb wird allerdings vom Staat getragen.
-            2017 wurde die E-Health Foundation als Zentrum für Gesundheits- und
-            Sozialinformationssysteme (TEHIK) zusammengelegt. Sie untersteht weiterhin dem
-            Sozialministerium.
-          </p>
+        <div class="flex flex-col w-2/3 gap-3">
+          <div class="flex flex-col">
+            <span class="label">Zielvorgabe durch Politik</span>
+            <p>
+              Die Politik legt durch Gesetze fest (zuletzt durch eine "Gesundheits-IT Strategie" 2013 und
+              2017), bis wann welche Gesundheitsleistungen digital sein sollen. Die E-Health Foundation
+              kümmert sich als Teilorganisation des Sozialministeriums um die Umsetzung.
+              Da die E-Health Foundation keine Gesellschafter außer dem Staat hat, kann sie schneller
+              Beschlüsse fassen und Entscheidungen treffen.
+            </p>
+          </div>
+
+          <div class="flex flex-col">
+        <span class="label">Teilbeteiligung der Krankenkassen</span>
+        <p>
+          Die Krankenkassen finanzieren teilweise die Entwicklung von digitalen
+          Gesundheitsdienstleistungen mit. Der Betrieb wird allerdings vom Staat getragen.
+          2017 wurde die E-Health Foundation als Zentrum für Gesundheits- und
+          Sozialinformationssysteme (TEHIK) zusammengelegt. Sie untersteht weiterhin dem
+          Sozialministerium.
+        </p>
+      </div>
         </div>
       </div>
     </section>
@@ -461,8 +520,28 @@ const estland = [
 
     <!-- OUTRO SECTION -->
     <section id="outro-section" class="flex flex-col h-screen mx-auto">
-      <h1>Weiterführende Quellen und Infos</h1>
-      <h2>wololo</h2>
+      <h1>Weiterführende Quellen & Infos</h1>
+      <div class="flex flex-col gap-3">
+        <a href="https://www.e-fi.de/fileadmin/Assets/Studien/2022/StuDIS_12_2022.pdf" target="_blank">
+          <span class="label hover:underline">Studie zur deutschen E-Health Entwicklung </span>
+          <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="align-top" />
+        </a>
+
+        <a href="https://www.ccc.de/de/updates/2022/erezept-mangelhaft" target="_blank">
+          <span class="label hover:underline">Kritik des CCC </span>
+          <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="align-top" />
+        </a>
+
+        <a href="https://patientenvertretung.g-ba.de/" target="_blank">
+          <span class="label hover:underline">Der Gemeinsame Bundesausschuss </span>
+          <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="align-top" />
+        </a>
+
+        <a href="https://link.springer.com/article/10.1007/s00103-019-02994-y" target="_blank">
+          <span class="label hover:underline">Brauchen wir mehr Patientenvertretung in Deutschland? </span>
+          <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="align-top" />
+        </a>
+      </div>
     </section>
   </div>
 </template>
