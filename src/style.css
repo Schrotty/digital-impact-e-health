@@ -41,13 +41,11 @@ p {
     word-break: break-word;
 }
 
-#title-section, #estland-section, #gematik-section, #outro-section {
-    justify-content: center;
-}
-
-#title-section, #estland-section, #gematik-section, #outro-section {
+#title-section, #estland-section, #gematik-section, #outro-section, #why-section, #post-gematik-section,
+.content-section {
     padding-left: 50px;
     @apply bg-neutral-800;
+    justify-content: center;
     position: relative;
     z-index: 5;
 }

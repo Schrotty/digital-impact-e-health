@@ -296,11 +296,71 @@ const estland = [
       </TabGroup>
     </section>
 
+    <section id="why-section" class="flex flex-col h-screen mx-auto">
+      <h1>Woran liegt es, dass in Deutschland bis 2023 das E-Rezept noch nicht flächendeckend eingeführt ist?</h1>
+    </section>
+
+    <!-- GEMATIK SECTION -->
+    <section id="gematik-section" class="flex flex-col h-screen mx-auto">
+      <h1>Struktur der Gematik bis 2019</h1>
+      <div class="flex gap-3 mb-3">
+        <div class="flex flex-col w-1/2">
+          <span class="label">Hohe Autonomie bei Selbstverwaltungsorganen</span>
+          <p>
+            Die Politik setzt den gesetzlichen Rahmen, die Umsetzung ist Aufgabe der
+            Selbstverwaltungsorgane. Dabei sollen sie sicherstellen, dass die Gestaltung des
+            Digitalisierungsprozesses der Lebenswirklichkeit entspricht und sachorientierte
+            Entscheidungen getroffen werden.
+          </p>
+        </div>
+
+        <div class="flex flex-col w-1/2">
+          <span class="label">Keine klare Zielrichtung</span>
+          <p>
+            Seitens des BMG fehlt eine zielgerichtete Strategie, es gibt keine / wenig
+            Autonomiebeschränkende gesetzliche Rahmenbedingungen (Fristen, Sanktionen,
+            Vorgaben). Dadurch fehlt der Gematik der "Leistungsdruck".
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-3 mb-6">
+        <div class="flex flex-col w-1/2">
+          <span class="label">Wenig Transparenz</span>
+          <p>
+            Die Gesellschafterversammlung tagen geheim, eine Veröffentlichung von Protokollen
+            findet nicht statt. So sind (nicht-)Entscheidungen der interessierten Öffentlichkeit nicht
+            zugänglich. Entscheidungsprozesse und Interessenkonflikte sind opak.
+          </p>
+        </div>
+
+        <div class="flex flex-col w-1/2">
+          <span class="label">Faktisch Beschlussunfähig</span>
+          <p>
+            Zuwiderlaufende Interessen der Gesellschafter bei gleichzeitiger Notwendigkeit einer
+            67% Mehrheit für Beschlüsse, sorgten dafür dass sich Gesellschafter gegenseitig
+            blockierten.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-row">
+        Um Blockaden aufzulösen und den Digitalisierungsprozess zu beschleunigen, übernahm (mit den
+        TSVG) 2019 das BMG mit 51% die Mehrheitsanteile der gematik und legte die einfache Mehrheit zur
+        Beschlussfähigkeit fest. Damit kann das BMG allein Entscheidungen beschließen.
+      </div>
+    </section>
+
+    <!-- PRE ESTLAND -->
+    <section id="post-gematik-section" class="flex flex-col h-screen mx-auto">
+      <h1>Im Vergleich dazu: Wie ist die Struktur der estländischen E-Health Foundation (bis 2017) aufbaut?</h1>
+    </section>
+
     <!-- ESTLAND SECTION -->
     <section id="estland-section" class="flex flex-col h-screen mx-auto">
       <h1>Struktur der estländischen E-Health Foundation bis 2017</h1>
-      <div class="flex fle-col gap-3">
-        <div class="flex flex-col">
+      <div class="flex gap-3">
+        <div class="flex flex-col w-1/2">
           <span class="label">Zielvorgabe durch Politik</span>
           <p>
             Die Politik legt durch Gesetze fest (zuletzt durch eine "Gesundheits-IT Strategie" 2013 und
@@ -311,7 +371,7 @@ const estland = [
           </p>
         </div>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col w-1/2">
           <span class="label">Teilbeteiligung der Krankenkassen</span>
           <p>
             Die Krankenkassen finanzieren teilweise die Entwicklung von digitalen
@@ -324,47 +384,84 @@ const estland = [
       </div>
     </section>
 
-    <!-- GEMATIK SECTION -->
-    <section id="gematik-section" class="flex flex-col h-screen mx-auto">
-      <h1>Struktur der Gematik bis 2019</h1>
-      <div class="flex fle-col gap-3">
-        <div class="flex flex-col">
-          <span class="label">Hohe Autonomie bei Selbstverwaltungsorganen</span>
+    <!-- COMPARISON -->
+    <section id="comparison-section" class="flex flex-col h-screen mx-auto content-section">
+      <h1>Wäre es also auch für Deutschland zielführend keine Gesellschafter in den Digitalisierungsprozess einzubeziehen?</h1>
+      <div class="flex gap-3 mb-3">
+        <div class="flex flex-col w-1/2">
+          <span class="label">Selbstverwaltung als Prinzip demokratischen Konsens</span>
           <p>
-            Die Politik setzt den gesetzlichen Rahmen, die Umsetzung ist Aufgabe der Selbstverwaltungsorgane. Dabei sollen sie sicherstellen, dass die Gestaltung des
-            Digitalisierungsprozesses der Lebenswirklichkeit entspricht und sachorientierte Entscheidungen getroffen werden.
+            Das deutsche Gesundheitssystem wird nach dem Prinzip der Selbstverwaltung
+            organisiert. Die Struktur des Systems beruht auf Konsens und Kompromissen. Durch
+            die Beteiligung der Selbstverwaltungsorgane wird das demokratische Prinzip
+            aufrechterhalten.
           </p>
         </div>
 
-        <div class="flex flex-col">
-          <span class="label">Keine klare Zielrichtung</span>
+        <div class="flex flex-col w-1/2">
+          <span class="label">Voraussetzung: Transparenz</span>
           <p>
-            Seitens des BMG fehlt eine zielgerichtete Strategie, es gibt keine / wenig Autonomiebeschränkende gesetzliche Rahmenbedingungen (Fristen, Sanktionen, Vorgaben). Dadurch
-            fehlt der Gematik der "Leistungsdruck".
+            Die Selbstverwaltungsorgane vertreten sowohl die Interessen der Patient:innen, sind
+            zeitgleich aber auch gewinnorientiert. Sofern dabei entstehende Verteilungs- und
+            Interessenkonflikte von der gematik jedoch transparent transportiert werden, ist eine
+            Reaktion seitens der Öffentlichkeit und der Politik notwendig. So kann der öffentliche
+            Diskurs unter Stärkung der Patient:innenposition angeregt und Alternativen durch die
+            technisch-interessierte Öffentlichkeit aufgezeigt werden (bspw. durch den Chaos
+            Computer Club), während die Politik als Reaktion entsprechende gesetzliche,
+            begrenzende Rahmenbedingungen vorgeben kann.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-3 mb-12">
+        <div class="flex flex-col w-1/2">
+          <span class="label">Fachwissen und Expertise</span>
+          <p>
+            Die Gestaltung des Prozesses erfolgt bei Beteiligung der Spitzenorganisationen des
+            deutschen Gesundheitswesend durch diejenigen Akteure, welche die meiste
+            Expertise besitzen. Das Produkt muss gemäß der realen Notwendigkeiten entworfen
+            und spezifiziert werden, sodass das E-Rezept und dessen Prozessabläufe einen
+            Mehrwert bringen. Da das BMG als Behörde ein Verwaltungsorgan darstellt, kann
+            angezweifelt werden, dass die notwendige Nähe zum Produkt besteht.
           </p>
         </div>
 
-        <div class="flex flex-col">
-          <span class="label">Wenig Transparenz</span>
+        <div class="flex flex-col w-1/2">
+          <span class="label">Akzeptanz der Leistungserbringer</span>
           <p>
-            Die Gesellschafterversammlung tagen geheim, eine Veröffentlichung von Protokollen findet nicht statt. So sind (nicht-)Entscheidungen der interessierten Öffentlichkeit
-            nicht zugänglich. Entscheidungsprozesse und Interessenkonflikte sind opak.
+            Besonders den Leistungserbringern und den Patient:innen(-verbänden) kommt eine
+            bremsende Rolle zu, da Patient:innen im Zweifelsfall die Leidtragenden sind und die
+            Leistungsbringer nur von der Digitalisierung profitieren, wenn sie einen medizinischen
+            oder verwaltungstechnischen Vorteil bringt. Umso wichtiger ist die Akzeptanz bei den
+            Selbstverwaltungsorganen, damit digitale Anwendungen erfolgreich etabliert werden
+            können.
           </p>
         </div>
+      </div>
 
+      <div class="flex gap-3">
         <div class="flex flex-col">
-          <span class="label">Faktisch Beschlussunfähig</span>
-          <p>
-            Zuwiderlaufende Interessen der Gesellschafter bei gleichzeitiger Notwendigkeit einer Zweidrittelmehrheit für Beschlüsse, sorgten dafür dass sich Gesellschafter
-            gegenseitig blockierten.
+          <h2>Unserer Ansicht nach, kann auch unter Einbeziehung der Spitzenorganisationen des deutschen Gesundheitswesens der Digitalisierungsprozess erfolgreich umgesetzt werden.</h2>
+          <p class="w-1/2">
+            Dies setzt jedoch voraus, dass von Beginn an die Politik eine starke, steuernde Rolle einnimmt und
+            die Spitzenorganisationen durch gesetzliche Rahmenbedingungen und Fristen in die Pflicht nimmt.
+            Die Bedeutung der Akzeptanz darf nicht unterschätzt werden, nicht nur von den
+            Selbstverwaltungsorganen, sondern von Patient:innen und Versicherten sowie der technisch interessierten Öffentlichkeit.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- FINAL SECTION -->
+    <section id="estland-section" class="flex flex-col h-screen mx-auto content-section">
+      <h1>Zum Abschluss</h1>
+      <h2>Welche Bedeutung hat für euch die gesellschaftliche Beteiligung von verschiedenen Akteur:innen?</h2>
+      <h2> Wie könnte eine zügige Einführung von digitalen Anwendungen erfolgen, während gleichzeitig keine gesellschaftlichen Akteure vernachlässigt werden?</h2>
+    </section>
+
     <!-- OUTRO SECTION -->
     <section id="outro-section" class="flex flex-col h-screen mx-auto">
-      <h1>Weiterführende Quellen und Infomaterial</h1>
+      <h1>Weiterführende Quellen und Infos</h1>
       <h2>wololo</h2>
     </section>
   </div>
