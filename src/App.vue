@@ -164,7 +164,8 @@ const production = [
   },
   {
     label: "2011 - Die elektronische Gesundheitskarte erscheint",
-    fullText: "Ausgabe der ersten Generation von elektronischen Gesundheitskarten, enthält abseits eines Lichtbildes aber keine weiteren Funktionen."
+    fullText: "Ausgabe der ersten Generation von elektronischen Gesundheitskarten, enthält abseits eines Lichtbildes aber keine weiteren Funktionen. Sie hätte bereits 2006 erscheinen sollen." +
+              "Sie sollte ursprünglich neben Informationen über Blutgruppe, Allergien, Implantate und Impfungen auch Zugriff E-Rezept gewähren."
   },
   {
     label: "2012"
@@ -183,7 +184,8 @@ const production = [
   },
   {
     label: "2017 - Die elektronische Gesundheitskarten muss getauscht werden",
-    fullText: "Ab Oktober können elektronische Gesundheitskarten der ersten Generation nicht mehr eingelesen werden und der Wechsel auf Version zwei wird nötig. Diese ermöglicht nun auch den Abgleich mit den Versichertenstammdaten.",
+    fullText: "Ab Oktober können elektronische Gesundheitskarten der ersten Generation nicht mehr eingelesen werden und der Wechsel auf Version zwei wird nötig." +
+              "Diese ermöglicht nun auch den Abgleich mit den Versichertenstammdaten.",
   },
   {
     label: "2018 - Die Telematikinfrastruktur wechselt in den Produktivbetrieb",
@@ -193,20 +195,22 @@ const production = [
     label: "2019"
   },
   {
-    label: "2020 - Pilotversuche",
-    fullText: "Pilotversuche beim E-Rezept ca 2020"
+    label: "2020",
+    fullText: ""
   },
   {
-    label: "2021 - Die elektronische Gesundheitsakte für alle gesetzlichen Versicherten",
-    fullText: "Elektronische Patientenakte für alle gesetzlich Versicherten"
+    label: "2021 - Die elektronische Gesundheitsakte geht an den Start",
+    fullText: "Durch das TSVG wurden die gesetzlichen Krankenversicherungen zunächst dazu verpflichtet, ihren Versicherten bis Januar 2021 eine elektronische" +
+              "Patientenakte anzubieten. Die Nutzung ist freiwillig. Seit Juli 2021 müssen vertragsärztlich tätigen Leistungserbringende praktisch in der Lage sein, die elektronische" +
+              "Patientenakte zu nutzen und zu befüllen. Bis Januar 2022 müssen auch Krankenhäuser die ePA nutzen können."
   },
   {
-    label: "2022 - Abbruch der Pilotversuche",
-    fullText: "Ab September 2022: Apotheken nehmen elektronische Rezepte an (viele Arztpraxen technisch jedoch nicht in der Lage diese auszustellen); Abbruch Rollout in Testregionen"
+    label: "2022 - Start des Pilotversuches & deren Abbruch",
+    fullText: "Apotheken sind in der Lage elektronische Rezepte anzunehmen, jedoch sind viele Praxen nicht in der Lage diese auszustellen."
   },
   {
     label: "2023 - Geplante bundesweite Einführung des E-Rezepts",
-    fullText: "Geplant: bundesweite Einführung des E-Rezepts ab 2023"
+    fullText: "Mitte 2023 soll das E-Rezept bundesweit eingeführt werden."
   }
 ]
 const estland = [
