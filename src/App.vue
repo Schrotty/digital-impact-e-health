@@ -79,7 +79,9 @@ const politics = [
   },
   {
     label: "2010 - Schlichtungsverfahren innerhalb der Gematik",
-    fullText: "Festlegungen für das weitere Vorgehen werden getroffen und ein Schlichtungsverfahren für Streitfragen eingeführt. Gleichzeitig wird Druck auf die Kassen gemacht die Einführung zu beschleunigen, da ansonsten Kürzungen bei der Verwaltung drohen."
+    fullText: "Festlegungen für das weitere Vorgehen werden getroffen und ein Schlichtungsverfahren für Streitfragen eingeführt. Gleichzeitig wird Druck auf die Kassen gemacht " +
+              "die Einführung zu beschleunigen, da ansonsten Kürzungen bei der Verwaltung drohen. Ebenso soll die Telematikinfrastruktur für andere Bereiche geöffnet werden." +
+              "So sollen andere Leistungserbringer ebenfalls die TI nutzen können."
   },
   {
     label: "2011",
@@ -95,7 +97,10 @@ const politics = [
   },
   {
     label: "2015 - Das E-Health Gesetz",
-    fullText: "Gesetz für sichere digitale Kommunikation und Anwendung im Gesundheitssystem sowie zur Änderung weiterer Gesetze (E-Health-Gesetz): Fahrplan für die Einführung der digitalen Infrastruktur im Gesundheitswesen + diverse Umsetzungsfristen für Akteure der Selbstverwaltung"
+    fullText: "Gesetz für sichere digitale Kommunikation und Anwendung im Gesundheitssystem sowie zur Änderung weiterer Gesetze (E-Health-Gesetz): " +
+              "Fahrplan für die Einführung der digitalen Infrastruktur im Gesundheitswesen + diverse Umsetzungsfristen für Akteure der Selbstverwaltung." +
+              "Ziel ist die Chancen der Digitalisierung für die Gesundheitsvorsorge zu nutzen und eine schnelle Einführung medizinischer Anwendungen für die Patientinnen und Patienten zu ermöglichen." +
+              "Die Organisationen der Selbstverwaltung erhielten darin klare Vorgaben und Fristen, die bei Nichteinhaltung teilweise auch zu Sanktionen führen."
   },
   {
     label: "2016"
@@ -109,9 +114,9 @@ const politics = [
   {
     label: "2019 - Das TSVG & GSV treten in Kraft",
     fullText: "Gesetz für schnellere Termine und bessere Versorgung (Terminservice- und Versorgungsgesetz, TSVG)\n" +
-        "(Fristen zur Einführung der ePA, eAU; Umbenennung in und effektivere Entscheidungsprozesse der gematik)." +
-        "Gesetz für mehr Sicherheit in der Arzneimittelversorgung (GSAV):\n" +
-        "Ermöglichung der Abgabe verschreibungspflichtiger Arzneimittelversorgung durch Abgabe nach ausschließlicher Fernbehandlung; Vorgaben für Selbstverwaltung zur Einführung zur Einführung des E-Rezepts"
+              "(Fristen zur Einführung der ePA, eAU; Umbenennung in und effektivere Entscheidungsprozesse der gematik)." +
+              "Gesetz für mehr Sicherheit in der Arzneimittelversorgung (GSAV):\n" +
+              "Ermöglichung der Abgabe verschreibungspflichtiger Arzneimittelversorgung durch Abgabe nach ausschließlicher Fernbehandlung; Vorgaben für Selbstverwaltung zur Einführung zur Einführung des E-Rezepts"
   },
   {
     label: "2020"
@@ -158,7 +163,7 @@ const production = [
     label: "2010"
   },
   {
-    label: "2011 - Die erste Generation von elektronischen Gesundheitskarten erscheint",
+    label: "2011 - Die elektronische Gesundheitskarte erscheint",
     fullText: "Ausgabe der ersten Generation von elektronischen Gesundheitskarten, enthält abseits eines Lichtbildes aber keine weiteren Funktionen."
   },
   {
@@ -177,7 +182,7 @@ const production = [
     label: "2016"
   },
   {
-    label: "2017 - Die erste Generation elektronischer Gesundheitskarten muss getauscht werden",
+    label: "2017 - Die elektronische Gesundheitskarten muss getauscht werden",
     fullText: "Ab Oktober können elektronische Gesundheitskarten der ersten Generation nicht mehr eingelesen werden und der Wechsel auf Version zwei wird nötig. Diese ermöglicht nun auch den Abgleich mit den Versichertenstammdaten.",
   },
   {
@@ -185,8 +190,7 @@ const production = [
     fullText: "Produktivbetrieb der Telematikinfrastruktur (TI). Alle Arztpraxen müssen bis Ende 2018 angebunden sein."
   },
   {
-    label: "2019 - Das Terminservice- und Versorgungsgesetz & das Gesetz für mehr Sicherheit in der Arzneimittelversorgung",
-    type: "politics",
+    label: "2019"
   },
   {
     label: "2020 - Pilotversuche",
@@ -197,7 +201,7 @@ const production = [
     fullText: "Elektronische Patientenakte für alle gesetzlich Versicherten"
   },
   {
-    label: "2022 - Apotheken nehmen elektronische Rezepte an & Abbruch der Pilotversuche",
+    label: "2022 - Abbruch der Pilotversuche",
     fullText: "Ab September 2022: Apotheken nehmen elektronische Rezepte an (viele Arztpraxen technisch jedoch nicht in der Lage diese auszustellen); Abbruch Rollout in Testregionen"
   },
   {
@@ -313,7 +317,7 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale,
             <span :class="{ 'text-white': selected, 'text-gray-500': !selected }">Gesetzliche Rahmenbedingungen</span>
           </Tab>
           <Tab v-slot="{ selected }" class="label text-right" >
-            <span :class="{ 'text-white': selected, 'text-gray-500': !selected }">Tests und Inbetriebnahme</span>
+            <span :class="{ 'text-white': selected, 'text-gray-500': !selected }">Test und Inbetriebnahme</span>
           </Tab>
           <Tab v-slot="{ selected }" class="label text-right" >
             <span :class="{ 'text-white': selected, 'text-gray-500': !selected }">Ablauf in Estland</span>
